@@ -14,9 +14,7 @@
   "author": "",
   "license": "ISC",
   "workspaces": [
-    "./shell",
-    "./auth",
-    "./client",
-    "./admin"
-  ]  
+    "./apps/*",
+    "./configs/*"
+  ]
 }
