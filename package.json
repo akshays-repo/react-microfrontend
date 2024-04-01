@@ -1,0 +1,22 @@
+{
+  "name": "mf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm:dev*\"",
+    "dev:shell": "npm run dev -w @mf/shell",
+    "dev:auth": "npm run serve -w @mf/auth",
+    "dev:client": "npm run serve -w @mf/client",
+    "dev:admin": "npm run serve -w @mf/admin"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "./shell",
+    "./auth",
+    "./client",
+    "./admin"
+  ]  
+}
